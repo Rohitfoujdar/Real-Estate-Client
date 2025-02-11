@@ -48,7 +48,6 @@ export default function AdForm({ action, type }) {
       <ImageUpload ad={ad} setAd={setAd} />
       <div className="mb-3 form-control">
         <GooglePlacesAutocomplete
-          apiKey={GOOGLE_PLACES_KEY}
           apiOptions="au"
           selectProps={{
             defaultInputValue: ad?.address,
